@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "barf.ui", "barf\barf.ui.csproj", "{423CB3C1-6F11-4892-9DB6-929802151280}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "barf.api", "barf.api\barf.api.csproj", "{E30CCCDC-D741-40A2-81EB-58FC348C6A05}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "barf.lib", "barf.lib\barf.lib.csproj", "{5A89FB9E-309F-4294-8D7B-9C919E6AAD3E}"
 EndProject
 Global
@@ -19,10 +17,6 @@ Global
 		{423CB3C1-6F11-4892-9DB6-929802151280}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{423CB3C1-6F11-4892-9DB6-929802151280}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{423CB3C1-6F11-4892-9DB6-929802151280}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E30CCCDC-D741-40A2-81EB-58FC348C6A05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E30CCCDC-D741-40A2-81EB-58FC348C6A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E30CCCDC-D741-40A2-81EB-58FC348C6A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E30CCCDC-D741-40A2-81EB-58FC348C6A05}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5A89FB9E-309F-4294-8D7B-9C919E6AAD3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5A89FB9E-309F-4294-8D7B-9C919E6AAD3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A89FB9E-309F-4294-8D7B-9C919E6AAD3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
