@@ -79,3 +79,5 @@ barf.lib/bin/
 barf.lib/obj/
 barf/bin/
 packages/
+barf.tests/bin/
+barf.tests/obj/
