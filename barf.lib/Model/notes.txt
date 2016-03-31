@@ -1,0 +1,4 @@
+﻿Notes:
+- Current approach: Enable the CMS only on a staging environment for security reasons. Move content changes from staging to live via a script or tool of some sort.
+- Another approach: Have the CMS as a standalone website.
+- The dcms controllers reside in the dcms folder by default. Probably make sense to move them to the controllers folder. That is for the developer to decide.

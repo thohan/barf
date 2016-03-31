@@ -30,19 +30,119 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc, Version=3.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.Mvc5.3.3.4\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.0\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.1.0\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.1.0\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.0\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContentType.cs" />
+    <Compile Include="Data\ContentBinaryDao.cs" />
+    <Compile Include="Data\ContentBinaryRevisionDao.cs" />
+    <Compile Include="Data\ContentStubDao.cs" />
+    <Compile Include="Data\ContentTextDao.cs" />
+    <Compile Include="Data\ContentTextRevisionDao.cs" />
+    <Compile Include="Data\DataHelper.cs" />
+    <Compile Include="Data\LanguageDao.cs" />
+    <Compile Include="Data\UtilityDao.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Interface\Data\IContentBinaryDao.cs" />
+    <Compile Include="Interface\Data\IContentBinaryRevisionDao.cs" />
+    <Compile Include="Interface\Data\IContentStubDao.cs" />
+    <Compile Include="Interface\Data\IContentTextDao.cs" />
+    <Compile Include="Interface\Data\IContentTextRevisionDao.cs" />
+    <Compile Include="Interface\Data\IDataHelper.cs" />
+    <Compile Include="Interface\Data\ILanguageDao.cs" />
+    <Compile Include="Interface\Data\IUtilityDao.cs" />
+    <Compile Include="Interface\Service\ICacheSvc.cs" />
+    <Compile Include="Interface\Service\IContentBinaryRevisionSvc.cs" />
+    <Compile Include="Interface\Service\IContentSvc.cs" />
+    <Compile Include="Interface\Service\IContentTextRevisionSvc.cs" />
+    <Compile Include="Interface\Service\ILanguageSvc.cs" />
+    <Compile Include="Interface\Service\ISessionSvc.cs" />
+    <Compile Include="Interface\Service\IUtilSvc.cs" />
+    <Compile Include="Model\ContentBinary.cs" />
+    <Compile Include="Model\ContentBinaryRevision.cs" />
+    <Compile Include="Model\ContentStub.cs" />
+    <Compile Include="Model\ContentText.cs" />
+    <Compile Include="Model\ContentTextRevision.cs" />
+    <Compile Include="Model\DCMSAuthorization.cs" />
+    <Compile Include="Model\DcmsNoCacheAttribute.cs" />
+    <Compile Include="Model\ImageResult.cs" />
+    <Compile Include="Model\Language.cs" />
+    <Compile Include="Model\Util.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registry.cs" />
+    <Compile Include="Service\CacheSvc.cs" />
+    <Compile Include="Service\ContentBinaryRevisionSvc.cs" />
+    <Compile Include="Service\ContentSvc.cs" />
+    <Compile Include="Service\ContentTextRevisionSvc.cs" />
+    <Compile Include="Service\LanguageSvc.cs" />
+    <Compile Include="Service\SessionSvc.cs" />
+    <Compile Include="Service\UtilSvc.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\notes.txt" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
